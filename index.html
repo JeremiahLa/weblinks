@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremiah Lalisan | Link Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <button class="theme-toggle" id="theme-toggle" type="button">Dark Mode</button>
+
+      <img
+        class="profile-pic"
+        src="https://lh3.googleusercontent.com/a-/ALV-UjVS1m_JNhFJPW-sHrMOFQ24Uwu-0khIQRhDa8rk5IROI34n4ixv8f5g39YDC569r8yr6fTMheX58wMX6u6iT7ZZFoUgfjxEOEPDPNWBUEJi4eEVIMDY8nOLJtAi6OCxEZSrw16BxI6v-OlB_gLi5kfF-JSAqfZ_Y9K73hN-mc4dCFX9kj97JAIKlld-qDjOo1KxZhitRmuXY76CISWYY8Dyds2nJvX4eqtEQI6eKkAief2qgPKNkJz8zEKyiH9CkGPAY_yWqgpxOxJhiy3w3KSUOUNW4pP4Sp_sk6HkTT-640eaE-jNgNWjc1I_LBfGe751-_3L-ewC4WW0pOZ7JRDhy5fkHqxIrJbG-bCmXqbmhvvKI5l_9Q755Q5W7hEtSFAahAu56_XcK6_lCf3dajKLXdnJN6n63dK_IJrAYl4o3WQ6fVvIliLmsQ6bO-zzdSf9oOft9P1AJV3HX5xQuyO2cmE4anisfAai1PdqvuyQ_s3UJ74xzZa10PcjQOJerOoToLHWjpnbM92_TMuVK3AdNw10NFoMXXggjmL052UgBYu7uK2Q8fW7ZLr4KJlIZc1GNAxcLUmYB3q3vd-YJ8QGYYKrcXcVGMKXWSu3jSH6Xsh77TGlJ-Qa2__lEgk3Ueaselu06kY-kPCEWsTLVgMqNyXGKAz3SYhYAYLUcH4NP5E63WNn54HArDFo5rxZVQy-lTl_Fln9YB3J53X5a7NfMN652M1l07uyjynA2yo5RB-Oe2RI5_9gQ6SEDNl_DxQqHSdbXExDuzW8Z_0iAw-0oJj_4M2twy8oRl75tVJ_iRnv8FL-01H9lYZXQ6I2clmWePWUVqbZFZfD0V5nfRwdAL2E75XVPD8QmGTIMt_048HZSIEUM9ABnRTxApJ4bzNbCKJDwNuvM85ItA8Mc9097qxkyl6l1xlb27DxWVccYjroYz3fQjBlyXR3Ugt69d_77oB-qZcQ0tOgoFAoHTmF33gEoQhrPbJJ3x3jRPuYsvAQIlVXzhpXqTj6XMU6zJkoa9SveUy--7D_RtnRRcT5CzxUAW3RESkxEab6t0pXR9t0V8CqZB0=s360-c-no"
+        alt="Profile picture of Jeremiah Lalisan"
+      />
+
+      <header>
+        <h1>Jeremiah Lalisan</h1>
+      </header>
+
+      <p>Greetings.</p>
+
+      <section class="links" aria-label="Social links">
+        <a class="link-btn" href="https://www.roblox.com/users/2148892015/profile" target="_blank" rel="noopener noreferrer">🎮 Roblox</a>
+        <a class="link-btn" href="https://steamcommunity.com/id/UnbreakableUnion/">🎮 Steam</a>
+        <a class="link-btn" href="https://github.com/JeremiahLa">💻 GitHub</a>
+        <a class="link-btn" href="https://open.spotify.com/user/Enterprise" target="_blank" rel="noopener noreferrer">🎵 Spotify</a>
+      </section>
+    </main>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-theme");
+        themeToggle.textContent = body.classList.contains("dark-theme")
+          ? "Light Mode"
+          : "Dark Mode";
+      });
+    </script>
+  </body>
+</html>

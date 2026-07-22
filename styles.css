@@ -1,0 +1,123 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", "System UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f9f3e8 0%, #e8dcca 100%);
+  color: #2f2a24;
+  padding: 24px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+body.dark-theme {
+  background: linear-gradient(135deg, #1f1f1f 0%, #2b2b2b 100%);
+  color: #f5f5f5;
+}
+
+.container {
+  position: relative;
+  width: min(90vw, 400px);
+  padding: 32px 24px;
+  text-align: center;
+  background: #fffdf9;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(47, 42, 36, 0.16);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+body.dark-theme .container {
+  background: #0f0f0f;
+  color: #f5f5f5;
+  border: 1px solid #2a2a2a;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2f2a24;
+  color: #fff;
+}
+
+body.dark-theme .theme-toggle {
+  background: #f5f5f5;
+  color: #1f1f1f;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  border: 3px solid #ffffff22;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 0 0 24px;
+  color: #6b5f4e;
+}
+
+body.dark-theme p {
+  color: #d8d8d8;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.link-btn:hover {
+  transform: translateY(-3px) scale(1.01);
+  filter: brightness(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.link-btn:nth-child(1) {
+  background: linear-gradient(135deg, #5865f2, #4752c4);
+}
+
+.link-btn:nth-child(2) {
+  background: linear-gradient(135deg, #1b2838, #2a475e);
+}
+
+.link-btn:nth-child(3) {
+  background: linear-gradient(135deg, #24292f, #444d56);
+}
+
+.link-btn:nth-child(4) {
+  background: linear-gradient(135deg, #1db954, #14833b);
+}
